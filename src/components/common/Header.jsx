@@ -40,7 +40,7 @@ function Header() {
                             </MenuItem>
                             <MenuItem>
                             <a>
-                            <img className='inline '  src={rightarrow} />
+                            <img className='inline'src={rightarrow} />
                             </a> 
                                
                             </MenuItem>
