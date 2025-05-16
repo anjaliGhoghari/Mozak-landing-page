@@ -1,0 +1,56 @@
+@use './fonts';
+@use './typography';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a{
+    @apply label-small  cursor-pointer hover:text-gray-800;
+}
+
+
+@layer components {
+  .container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1512px;
+    padding-left: 18px;
+    padding-right: 18px;
+    
+    @media (min-width: 768px) {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    @media (min-width: 1024px) {
+      padding-left: 96px;
+      padding-right: 96px;
+    }
+  }
+
+}
+
+
+@layer components{
+
+    .btn{
+      @apply leading-3 px-6 py-4 
+      font-bold border rounded-2xl;
+      
+      &.btn-green{
+        @apply border-green-500 bg-green-800 text-white hover:bg-[#103900c4];
+      }
+      
+    }
+  }
